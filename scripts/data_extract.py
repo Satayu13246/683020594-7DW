@@ -23,6 +23,11 @@ SOURCES = {
 # แหล่ง A: ระบบขายปัจจุบัน
 "customer": "raw/customer.csv",
 "employees": "raw/employees.csv",
+"order_details": "raw/order_details.csv",
+"orders":"raw/orders.csv",
+"products": "raw/products.csv",
+"shippers":"raw/shippers.csv",
+"suppliers":"raw/suppliers.csv",
 # แหล่ง B: ระบบขายเดิม (มีเฉพาะใบสั่งซื้อและรายการสินค้า)
 "legacy_orders": "legacy/orders.csv",
 "legacy_order_details": "legacy/order_details.csv",
