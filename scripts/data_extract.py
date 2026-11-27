@@ -16,7 +16,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "raw_data"
-DB_PATH = ROOT / "northwind.duckdb"
+DB_PATH = ROOT / "northwind_dw.duckdb"
 
 # ตารางใน schema raw → ไฟล์ต้นทาง (มาจาก 2 ระบบ)
 SOURCES = {

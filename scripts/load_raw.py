@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 
 import duckdb
-con = duckdb.connect("northwind.duckdb")
+con = duckdb.connect("northwind_dw.duckdb")
 con.execute("CREATE SCHEMA IF NOT EXISTS raw")
 rows = con.execute(
     "SELECT COUNT(*) FROM raw.orders").fetchall()
@@ -14,7 +14,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "raw_data"
-DB_PATH = ROOT / "northwind.duckdb"
+DB_PATH = ROOT / "northwind_dw.duckdb"
 
 SOURCES = {
     "customer": "raw/customer.csv",
